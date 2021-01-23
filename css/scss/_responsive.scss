@@ -1,0 +1,14 @@
+$desktop: 1440px;
+$mobile: 450px;
+
+@mixin responsive($tela) {
+    @if $tela == desktop {
+        @media screen and (min-width: $desktop) {
+            @content;
+        }
+    } @else if $tela == mobile {
+        @media screen and (max-width: $mobile) {
+            @content;
+        }
+    }
+} 

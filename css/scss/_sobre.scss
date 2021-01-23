@@ -1,0 +1,40 @@
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-pessoa {
+    position: relative;
+    float: left;
+    margin: 140px 0px 140px 140px;
+
+    img {
+        width: 600px;
+    }
+}
+
+.carta-sobre {
+    position: relative;
+    top: 110px;
+    right: 130px;
+    width: 420px;
+    padding: 80px;
+    text-align: left;
+    background-color: $branco;
+
+    h2 {
+        font-family: $fonte-02;
+        font-size: 40px;
+        font-weight: 300;
+        text-transform: uppercase;
+
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-family: $fonte-02;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
