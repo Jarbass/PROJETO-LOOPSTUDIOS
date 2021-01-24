@@ -17,7 +17,7 @@
 .carta-sobre {
     position: relative;
     top: 110px;
-    right: 130px;
+    right: 150px;
     width: 420px;
     padding: 80px;
     text-align: left;
@@ -34,6 +34,7 @@
 
     p{
         font-family: $fonte-02;
+        font-weight: 400;
         font-size: 16px;
         letter-spacing: 1px;
     }
