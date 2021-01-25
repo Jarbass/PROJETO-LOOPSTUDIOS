@@ -2,40 +2,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+.container-sobre {
+    width: 80%;
+    margin: 0 auto;
+    padding: 120px 0px;
+    position: relative;
 }
 
 .img-pessoa {
-    position: relative;
-    float: left;
-    margin: 140px 0px 140px 140px;
 
     img {
-        width: 600px;
+        width: 65%;
     }
 }
 
 .carta-sobre {
-    position: relative;
-    top: 110px;
-    right: 150px;
-    width: 420px;
-    padding: 80px;
-    text-align: left;
+    position: absolute;
+    width: 450px;
+    padding: 70px 0px 70px 70px;
+    top: 330px;
+    right: 0;
     background-color: $branco;
 
     h2 {
         font-family: $fonte-02;
-        font-size: 40px;
+        font-size: 50px;
         font-weight: 300;
         text-transform: uppercase;
-
         margin-bottom: 20px;
     }
 
-    p{
+    p {
         font-family: $fonte-02;
-        font-weight: 400;
-        font-size: 16px;
         letter-spacing: 1px;
+        right: 0;
     }
 }

@@ -2,39 +2,27 @@
     width: 100%;
 }
 
-.container-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 50px 130px 50px 45px;
-    margin: 0 auto;
-}
-
 .criacoes-title-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
-    padding-right: 40px;
 
     h3 {
         font-family: $fonte-02;
         font-size: 30px;
         font-weight: 300;
         text-transform: uppercase;
-        padding: 0px 0px 0px 0px;
     }
 
     button {
         font-family: $fonte-02;
         text-transform: uppercase;
-        padding: 10px 30px;
+        padding: 13px 30px 10px 30px;
         background-color: $branco;
         color: $preto;
         border: 1px solid $preto;
-        margin-right: 65px;
         transition: 0.3s ease;
 
         &:hover {
@@ -45,29 +33,68 @@
     }
 }
 
-.criacoes-img {
-    position: relative;
-    width: 20%;
-    margin: 30px 0px 0px 10px;
-    transition: 0.3s ease;
+/////////////////////////////// 
 
-    &:hover {
-        opacity: 0.5;
-        cursor: pointer;
-    }
+.imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-imagens {
+    width: 90%;
+    margin: 70px auto;
+    position: relative;
 
     img {
-        width: 90%;
+        width: 95%;
+        filter: brightness(70%);
+        transition: 0.3s ease;
     }
 
-    p {
-        position: absolute;
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+        margin-bottom: 30px;
+
+        &:hover {
+
+            img{
+                opacity: 0.5;
+            }
+
+            h3 {
+                color: $preto;
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
+
+    h3 {
+        z-index: 1;
         font-family: $fonte-02;
+        font-weight: 300;
         font-size: 30px;
-        text-transform: uppercase;
-        top: 280px;
-        left: 10px;
         color: $branco;
+        transition: 0.3s ease;
+
+        position: absolute;
+        top: 350px;
+    }
+
+    .h3-li {
+        top: 810px;
     }
 }
 
