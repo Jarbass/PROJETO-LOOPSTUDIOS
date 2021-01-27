@@ -1,0 +1,198 @@
+ //IMAGENS NAS DIVS
+ 
+ .terra {
+    background:rgba(0, 0, 0, .35) url("../../img/image-deep-earth.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+
+    &:hover {
+        background:rgba(255, 255, 255, 0.35) url("../../img/image-deep-earth.jpg");
+        background-size: 100%;
+        background-blend-mode: exclusion;
+    }
+}
+
+.jogos {
+    background:rgba(0, 0, 0, .35) url("../../img/image-night-arcade.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+
+    &:hover {
+        background:rgba(255, 255, 255, 0.35) url("../../img/image-night-arcade.jpg");
+        background-size: 100%;
+        background-blend-mode: exclusion;
+    }
+}
+
+.futebol {
+    background:rgba(0, 0, 0, .35) url("../../img/image-soccer-team.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+
+    &:hover {
+        background:rgba(255, 255, 255, 0.35) url("../../img/image-soccer-team.jpg");
+        background-size: 100%;
+        background-blend-mode: exclusion;
+    }
+}
+
+.corrida {
+    background:rgba(0, 0, 0, .35) url("../../img/image-grid.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+
+    &:hover {
+        background:rgba(255, 255, 255, 0.35) url("../../img/image-grid.jpg");
+        background-size: 100%;
+        background-blend-mode: exclusion;
+    }
+}
+
+.estrada {
+    background:rgba(0, 0, 0, .35) url("../../img/image-from-above.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+
+    &:hover {
+        background:rgba(255, 255, 255, 0.35) url("../../img/image-from-above.jpg");
+        background-size: 100%;
+        background-blend-mode: exclusion;
+    }
+}
+
+.aurora {
+    background:rgba(0, 0, 0, .35) url("../../img/image-pocket-borealis.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+
+    &:hover {
+        background:rgba(255, 255, 255, 0.35) url("../../img/image-pocket-borealis.jpg");
+        background-size: 100%;
+        background-blend-mode: exclusion;
+    }
+}
+
+.robo {
+    background:rgba(0, 0, 0, .35) url("../../img/image-curiosity.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+
+    &:hover {
+        background:rgba(255, 255, 255, 0.35) url("../../img/image-curiosity.jpg");
+        background-size: 100%;
+        background-blend-mode: exclusion;
+    }
+}
+
+.olho {
+    background:rgba(0, 0, 0, .35) url("../../img/image-fisheye.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+
+    &:hover {
+        background:rgba(255, 255, 255, 0.35) url("../../img/image-fisheye.jpg");
+        background-size: 100%;
+        background-blend-mode: exclusion;
+    }
+}
+
+/*
+        MOBILE 
+                    */ 
+
+@include responsive(mobile) {
+    .terra {
+        background-image: url("../../img/img-mobile/image-deep-earth.jpg");
+        background-size: 100% 100%;
+
+        &:hover {
+            background:rgba(255, 255, 255, 0.35) url("../../img/img-mobile/image-deep-earth.jpg");
+            background-size: 100% 100%;
+            background-blend-mode: exclusion;
+        }
+    }
+    .jogos {
+        background-image: url("../../img/img-mobile/image-night-arcade.jpg");
+        background-size: 100% 100%;
+
+        &:hover {
+            background:rgba(255, 255, 255, 0.35) url("../../img/img-mobile/image-night-arcade.jpg");
+            background-size: 100% 100%;
+            background-blend-mode: exclusion;
+        }
+    }
+
+    .futebol {
+        background-image: url("../../img/img-mobile/image-soccer-team.jpg");
+        background-size: 100% 100%;
+
+        &:hover {
+            background:rgba(255, 255, 255, 0.35) url("../../img/img-mobile/image-soccer-team.jpg");
+            background-size: 100% 100%;
+            background-blend-mode: exclusion;
+        }
+    }
+
+    .corrida {
+        background-image: url("../../img/img-mobile/image-grid.jpg");
+        background-size: 100%;
+
+        &:hover {
+            background:rgba(255, 255, 255, 0.35) url("../../img/img-mobile/image-grid.jpg");
+            background-size: 100% 100%;
+            background-blend-mode: exclusion;
+        }
+    }
+
+    .estrada {
+        background-image: url("../../img/img-mobile/image-from-above.jpg");
+        background-image: 100% 100%;
+
+        &:hover {
+            background:rgba(255, 255, 255, 0.35) url("../../img/img-mobile/image-from-above.jpg");
+            background-size: 100% 100%;
+            background-blend-mode: exclusion;
+        }
+    }
+
+    .aurora {
+        background-image: url("../../img/img-mobile/image-pocket-borealis.jpg");
+        background-size: 100% 100%;
+
+        &:hover {
+            background:rgba(255, 255, 255, 0.35) url("../../img/img-mobile/image-pocket-borealis.jpg");
+            background-size: 100% 100%;
+            background-blend-mode: exclusion;
+        }
+    }
+
+    .robo {
+        background-image: url("../../img/img-mobile/image-curiosity.jpg");
+        background-size: 100% 100%;
+
+        &:hover {
+            background:rgba(255, 255, 255, 0.35) url("../../img/img-mobile/image-curiosity.jpg");
+            background-size: 100% 100%;
+            background-blend-mode: exclusion;
+        }
+    }
+
+    .olho {
+        background-image: url("../../img/img-mobile/image-fisheye.jpg");
+        background-size: 100% 100%;
+
+        &:hover {
+            background:rgba(255, 255, 255, 0.35) url("../../img/img-mobile/image-fisheye.jpg");
+            background-size: 100% 100%;
+            background-blend-mode: exclusion;
+        }
+    }
+}

@@ -103,3 +103,60 @@
         }
     }
 }
+
+// MOBILE
+
+@include responsive(mobile) {
+
+    .footer {
+        position: relative;
+        margin-top: 140px;
+        justify-content: center;
+    }
+    
+    .logo-icones {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .logo-footer {
+        margin: 0px 40px 40px 40px;
+    }
+
+    .icons-footer {
+        margin-top: 250px;
+    }
+
+    .footer-final {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-ul {
+        position: absolute;
+        top: 90px;
+        left: 174px;
+        
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 20px auto;
+        } 
+        
+        li + li {
+            margin-top: 25px;
+            margin-left: 0px;
+        }
+
+        a {
+            font-size: 16px;
+        }
+    }
+
+    .container-p {
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+}

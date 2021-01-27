@@ -41,3 +41,56 @@
         right: 0;
     }
 }
+
+// MOBILE
+
+@include responsive(mobile) {
+
+    .sobre {
+        padding-top: 10em;
+    }
+
+    .container-sobre{
+        width: 90%;
+        padding-bottom: 100px;
+        padding: 0px;
+        margin: 0px;
+        position: static;
+    }
+
+    .img-pessoa {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .carta-sobre {
+        width: 300px;
+        position: static;
+        top: 0;
+        right: 0;
+        padding: 0;
+        margin: 50px auto 150px auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        
+
+        h2 {
+            font-family: $fonte-02;
+            font-size: 38px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+    
+        p {
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+}

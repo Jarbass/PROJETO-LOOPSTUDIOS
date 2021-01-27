@@ -36,65 +36,73 @@
 /////////////////////////////// 
 
 .imagens {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 50px auto;
 }
 
 .container-imagens {
-    width: 90%;
-    margin: 70px auto;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 
-    img {
-        width: 95%;
-        filter: brightness(70%);
+    .img {
+        height: 67vh;
+        width: 230px;
+        padding-left: 20px;
+        margin-bottom: 25px;
         transition: 0.3s ease;
-    }
-
-    ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    li {
-        display: flex;
-        justify-content: center;
-        margin-left: 20px;
-        margin-bottom: 30px;
 
         &:hover {
-
-            img{
-                opacity: 0.5;
-            }
+            cursor: pointer;
 
             h3 {
                 color: $preto;
-                opacity: 1;
-                cursor: pointer;
+            }
+        }
+
+        h3 {
+            font-family: $fonte-02;
+            font-weight: 300;
+            font-size: 30px;
+            margin-top: 12em;
+            color: $branco;
+            opacity: 1;
+        }
+    }
+}
+
+// MOBILE
+
+@include responsive(mobile) {
+
+    .imagens {
+        width: 90%;
+    }
+
+    .container-imagens{
+
+        .img {
+            height: 14.5vh;
+            width: 100%;
+            margin-bottom: 23px;
+            background-size: 100%;
+
+            h3 {
+                margin-top: 2.5em;
             }
         }
     }
 
-    h3 {
-        z-index: 1;
-        font-family: $fonte-02;
-        font-weight: 300;
-        font-size: 30px;
-        color: $branco;
-        transition: 0.3s ease;
+    .criacoes-title-button {
+        position: relative;
+        display: flex;
+        justify-content: center;
 
-        position: absolute;
-        top: 350px;
-    }
-
-    .h3-li {
-        top: 810px;
+        button {
+            position: absolute;
+            top: 91em;
+        }
+        
     }
 }
-
