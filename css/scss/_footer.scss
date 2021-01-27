@@ -111,7 +111,7 @@
     .footer {
         position: relative;
         margin-top: 140px;
-        justify-content: center;
+        
     }
     
     .logo-icones {
@@ -120,22 +120,25 @@
     }
 
     .logo-footer {
-        margin: 0px 40px 40px 40px;
+        width: 130px;
+        padding: 0px 100px;
     }
 
     .icons-footer {
-        margin-top: 250px;
+        margin-top: 280px;
     }
 
     .footer-final {
         flex-direction: column;
         justify-content: center;
+        width: 90%;
     }
 
     .container-ul {
         position: absolute;
         top: 90px;
-        left: 174px;
+        left: 50%;
+        right: 50%;
         
         ul {
             display: flex;

@@ -162,6 +162,72 @@ table {
   }
 }
 
+.nav-mobile {
+  display: none;
+}
+
+span {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .nav-mobile {
+    display: inline-block;
+  }
+  span {
+    display: inline-block;
+    cursor: pointer;
+  }
+  span img {
+    width: 30px;
+  }
+  .nav-mobile {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    padding-top: 50px;
+  }
+  .nav-mobile ul {
+    padding-top: 150px;
+  }
+  .nav-mobile ul a {
+    padding: 35px 8px 8px 32px;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+  }
+  .nav-mobile ul a:hover {
+    font-style: oblique;
+  }
+  .nav-mobile ul li + li {
+    padding-top: 30px;
+  }
+  .nav-mobile ul .logo-mobile {
+    position: absolute;
+    top: 5px;
+  }
+  .nav-mobile .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 25px;
+    margin-left: 50px;
+  }
+  .change {
+    width: 0;
+  }
+}
+
 .sobre {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,13 +418,20 @@ table {
     width: 90%;
   }
   .container-imagens .img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     height: 14.5vh;
     width: 100%;
     margin-bottom: 23px;
+    padding-bottom: 15px;
     background-size: 100%;
   }
   .container-imagens .img h3 {
-    margin-top: 2.5em;
+    margin-top: 0px;
   }
   .criacoes-title-button {
     position: relative;
@@ -371,7 +444,7 @@ table {
   }
   .criacoes-title-button button {
     position: absolute;
-    top: 91em;
+    top: 100em;
   }
 }
 
@@ -687,9 +760,6 @@ table {
   .footer {
     position: relative;
     margin-top: 140px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .logo-icones {
     -webkit-box-pack: center;
@@ -699,10 +769,11 @@ table {
         flex-wrap: wrap;
   }
   .logo-footer {
-    margin: 0px 40px 40px 40px;
+    width: 130px;
+    padding: 0px 100px;
   }
   .icons-footer {
-    margin-top: 250px;
+    margin-top: 280px;
   }
   .footer-final {
     -webkit-box-orient: vertical;
@@ -712,11 +783,13 @@ table {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 90%;
   }
   .container-ul {
     position: absolute;
     top: 90px;
-    left: 174px;
+    left: 50%;
+    right: 50%;
   }
   .container-ul ul {
     display: -webkit-box;

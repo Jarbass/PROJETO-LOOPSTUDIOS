@@ -83,13 +83,17 @@
     .container-imagens{
 
         .img {
+            
+            display: flex;
+            align-items: flex-end;
             height: 14.5vh;
             width: 100%;
             margin-bottom: 23px;
+            padding-bottom: 15px;
             background-size: 100%;
 
             h3 {
-                margin-top: 2.5em;
+                margin-top: 0px
             }
         }
     }
@@ -101,7 +105,7 @@
 
         button {
             position: absolute;
-            top: 91em;
+            top: 100em;
         }
         
     }
